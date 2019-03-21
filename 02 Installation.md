@@ -24,7 +24,7 @@ The next step is to install storage node. You can certainly install compute node
 2. Connect the power cord for the node to the power supply.
 3. Connect the ‘eth0’ Gigabit Ethernet controller to the Gigabit Ethernet Switch in the rack.
 4. Log into the frontend node and log in as ‘root’.
-5. Run the program ‘insert-ethers’ command: `# insert-ethers`.
+5. Run the program ‘insert-ethers’ command: `# insert-ethers`.  NOTE: disable iptable before run insert-ethers: `service iptables stop`. 
 6. A blue screen will appear, select ‘Compute’ as the appliance and hit ‘OK’.
 7. Then, the program will wait for DHCP requests from new compute node.
 8. At this point you can now power on the new compute node. The new nodes boot order should be set to PXE boot first.
